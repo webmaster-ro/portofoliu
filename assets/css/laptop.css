@@ -1,0 +1,10 @@
+@media all and (min-width: 1024px) {
+  /* Nav */
+  .nav--main {
+    display: block;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  
+}
