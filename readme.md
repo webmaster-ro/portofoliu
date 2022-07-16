@@ -3,6 +3,30 @@ Construim impreuna un website tip portofoliu cu tehnologii web simple si native 
 
 >  Nivelul de abordare - incepator spre mediu
 
+## Instructiuni instalare + utilizare
+1. trebuie sa aveti instalat NodeJS  
+2. deschideti folderul in terminal si rulati comenzile de mai jos:
+
+> instalati librariile js
+```
+npm install
+```
+
+> rulati aplicatia in modul `dev`
+```
+npm run dev
+```
+
+> compilati aplicatia
+```
+npm run build
+```
+
+> vizualizati aplicatia in versiunea finala
+```
+npm run preview
+```
+
 ## Detalii 
 > Preluate de pe discord - multumiri participantilor
 
