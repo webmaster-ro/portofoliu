@@ -38,6 +38,7 @@ ul {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+  color: rgba(255, 255, 255, 0.87);
   font-synthesis: none;
   scroll-behaviour: smooth;
   text-rendering: optimizeLegibility;
@@ -325,6 +326,27 @@ button {
   gap: 1rem;
 }
 
+body.has-mobile-nav {
+  overflow: hidden;
+}
+
+body.has-mobile-nav .nav--main {
+  display: flex;
+  position: fixed;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  backdrop-filter: blur(1rem);
+  background-color: #242424c7;
+}
+
+body.has-mobile-nav .nav--main ul {
+  width: 100%;
+  flex-direction: column;
+}
+
 .nav-link {
   position: relative;
   display: block;
@@ -410,6 +432,99 @@ button {
   transform: rotate(135deg);
 }
 
+/* Main CSS */
+main {
+  min-height: 200vh;
+}
+
+/* Sectiuni */
+section {
+  padding: 6rem 0 3rem;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+}
+
+section svg {
+  position: absolute;
+  bottom: 0;
+  color: var(--color-dark-purple);
+}
+
+section:nth-child(2n)  {
+  background-color: var(--color-dark-purple);
+}
+
+section:nth-child(2n) svg {
+  color: var(--color-black);
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  justify-content: center;
+  padding-top: 9rem;
+  background-image: url(/assets/img/illustrations/laravel_and_vue.svg);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: 50% 100%;
+}
+
+.hero .container {
+  margin-top: 10vh;
+}
+
+/* Despre Mine */
+.shaped {
+  display: none;
+}
+
+.skills {
+  margin-top: 2rem;
+}
+
+.skill {
+  margin-bottom: 1rem;
+}
+
+.skill-title {
+  margin-bottom: 1rem;
+}
+
+.skill-progress {
+  width: 100%;
+  position: relative;
+  height: .75rem;
+  border-radius: 1rem;
+  background-color: var(--color-purple);
+}
+
+.skill-progress::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: var(--color-primary);
+  border-radius: 1rem 0 0 1rem;
+  transition: all .3s;
+}
+
+.skill-progress--70::before {
+  right: 30%;
+}
+
+.skill-progress--75::before {
+  right: 25%;
+}
+
+.skill-progress--85::before {
+  right: 15%;
+}
+
+.skill-progress--90::before {
+  right: 10%;
+}
 
 
 

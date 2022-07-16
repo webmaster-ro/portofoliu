@@ -1,4 +1,13 @@
 @media all and (min-width: 1024px) {
+
+  /* Utile */
+  .grid.cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .grid.cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   /* Nav */
   .nav--main {
     display: block;
@@ -6,5 +15,13 @@
   .nav-toggle {
     display: none;
   }
-  
+
+  /* Despre mine */
+  .shaped {
+    display: block;
+    background: #00bcd44a;
+    padding: 3rem;
+    aspect-ratio: 1;
+    border-radius: 40% 70% 70% 40%/40% 0 60% 80%;
+  }
 }

@@ -1,0 +1,17 @@
+@media all and (min-width: 768px) {
+  /* Tipografie */
+  h1 {
+    font-size: 4.5rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4, p {
+    font-size: 1.2rem;
+  }
+
+  
+}
