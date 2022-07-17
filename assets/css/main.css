@@ -305,7 +305,7 @@ button {
   transition: all 0.5s;
 }
 
-.header.scrolled {
+.header--scrolled {
   padding: 1rem 0;
   background-color: var(--color-black);
   box-shadow: 0 2px 20px -16px rgb(0 0 0 / 50%);
@@ -386,6 +386,15 @@ body.has-mobile-nav .nav--main ul {
   left: 140%;
 }
 
+.line {
+  display: inline-block;
+  width: 120px;
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.line .underline,
 .nav-link.active .underline,
 .nav-link:hover .underline {
   opacity: 1;
@@ -393,11 +402,13 @@ body.has-mobile-nav .nav--main ul {
   width: 60%;
 }
 
+.line .underline::before,
 .nav-link.active .underline::before,
 .nav-link:hover .underline::before {
   width: 20%;
 }
 
+.line .underline::after,
 .nav-link.active .underline::after,
 .nav-link:hover .underline::after {
   width: 10%;
@@ -470,6 +481,8 @@ section:nth-child(2n) svg {
   background-position: 50% 100%;
 }
 
+
+
 .hero .container {
   margin-top: 10vh;
 }
@@ -526,6 +539,177 @@ section:nth-child(2n) svg {
   right: 10%;
 }
 
+/* Servicii */
+.services {
+  margin-top: 3rem;
+}
+
+.service {
+  background: var(--color-purple);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.service-icon {
+  width: 60px;
+  height: 60px;
+  background-image: url(/assets/img/icons/design.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-color: #cfcfcf;
+  border-radius: 25% 35% 0 35%;
+  background-position: 50%;
+}
+
+.service-title {
+  margin-left: 1.5rem;
+}
+
+.service-description {
+  margin-top: 1.5rem;
+}
 
 
+/* Portofoliu */
+.project {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.project {
+  background: radial-gradient(#ffeb3b1a, transparent);
+  border-radius: 40px;
+  overflow: hidden;
+  max-width: 500px;
+  margin: auto;
+}
+
+.project-title {
+  margin-top: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.project-description {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+  opacity: 0.7;
+}
+
+/* Recomandari */
+.testimonial {
+  text-align: left;
+}
+
+.testimonial-avatar {
+  max-width: 180px;
+  border-radius: 50px 0;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.testimonial-content {
+  flex: 1;
+  padding-left: 30px;
+  position: relative;
+}
+
+.testimonial-author {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.testimonial-title {
+  color: var(--color-secondary);
+  margin-bottom: 1rem;
+}
+
+.testimonial p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.testimonial-review li {
+  display: inline-block;
+  font-size: 14px;
+  color: #ffae34;
+  margin: 0 2px;
+}
+
+.star {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url(/assets/img/icons/star.svg);
+}
+
+.star.filled {
+  background: url(/assets/img/icons/star-filled.svg);
+}
+
+@media screen and (max-width: 1023px) {
+  .nav--main ul > li:last-child {
+    padding-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .testimonial {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .testimonial-content {
+    margin-top: 1.5rem;
+    padding-left: 0;
+  }
+}
+
+/* Experienta */
+.exp-row {
+  position: relative;
+  counter-increment: rowIndex;
+  margin-bottom: 3rem;
+}
+
+.exp-row::after {
+  content: counter(rowIndex);
+  color: var(--color-primary);
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  background-color: var(--color-dark-purple);
+  border: 2px solid var(--color-primary);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 3rem;
+  font-weight: 600;
+  left: 0;
+  top: 2.5rem;
+}
+
+.exp-description {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--color-purple);
+  text-align: justify;
+}
+
+.exp-description p {
+  margin: 0;
+}
+
+.exp-info {
+  padding-left: 4rem;
+  text-align: left;
+}
+
+.exp-info h3 {
+  line-height: 1.5;
+}
+
+.exp-info h4 {
+  color: var(--color-primary);
+}
 
