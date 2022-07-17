@@ -40,7 +40,7 @@ ul {
   font-weight: 400;
   color: rgba(255, 255, 255, 0.87);
   font-synthesis: none;
-  scroll-behaviour: smooth;
+  scroll-behavior: smooth;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialised;
   -moz-osx-font-smoothing: grayscale;
@@ -466,7 +466,7 @@ section:nth-child(2n) svg {
   padding-top: 9rem;
   background-image: url(/assets/img/illustrations/laravel_and_vue.svg);
   background-repeat: no-repeat;
-  background-size: 50%;
+  background-size: 50vh;
   background-position: 50% 100%;
 }
 
