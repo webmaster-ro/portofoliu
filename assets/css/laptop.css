@@ -74,6 +74,9 @@
     margin-bottom: 0;
   }
 
-
+  /* Contact */
+  .form--contact textarea {
+    grid-column: span 2;
+  }
 
 }
